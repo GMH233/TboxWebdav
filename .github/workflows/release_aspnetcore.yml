@@ -9,7 +9,8 @@ jobs:
   release_cli:
     strategy:
       matrix:
-        rid: [linux-arm64, linux-musl-arm64, linux-x64, linux-musl-x64, osx-x64, osx-arm64, win-x64, win-x86, win-arm64]
+        # rid: [linux-arm64, linux-musl-arm64, linux-x64, linux-musl-x64, osx-x64, osx-arm64, win-x64, win-x86, win-arm64]
+        rid: [linux-x64,win-x64]
         build_configuration: [Release]
         deploy_mode: [with-runtime, no-runtime]
     runs-on: ubuntu-latest
